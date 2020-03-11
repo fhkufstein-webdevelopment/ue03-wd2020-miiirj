@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,120 +20,119 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 4, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* dies ist ein kommentar */
-/* line 12, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 #main {
   width: 990px;
   margin: 0 auto;
 }
 
-/* line 18, ../sass/main.scss */
-input[type="text"], input[type="password"] {
+/* line 26, ../sass/main.scss */
+input, input[type="text"], input[type="password"], input[type="submit"] {
   border: 1px solid #000;
-  padding: 5px;
   margin: 10px 5px 10px 5px;
+}
+
+/* line 31, ../sass/main.scss */
+input[type="text"], input[type="password"] {
+  padding: 5px;
   width: 180px;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 input[type="submit"] {
-  border: 1px solid #000;
   border-radius: 0;
   background-color: #fafafa;
-  margin: 10px 5px 10px 5px;
   cursor: pointer;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 label {
   margin-left: 5px;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .passwordField {
   width: 300px;
   float: left;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .passwordFeedback {
   width: 250px;
   float: left;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .feedback {
   margin: 10px 5px 10px 5px;
   font-size: 11px;
   font-weight: 600;
 }
 
-/* line 55, ../sass/main.scss */
-.feedback.error {
+/* line 65, ../sass/main.scss */
+.feedback .error {
   color: #d9534f;
 }
-
-/* line 59, ../sass/main.scss */
-.feedback.warning {
+/* line 68, ../sass/main.scss */
+.feedback .warning {
   color: #f0ad4e;
 }
-
-/* line 63, ../sass/main.scss */
-.feedback.success {
+/* line 71, ../sass/main.scss */
+.feedback .success {
   color: #5cb85c;
 }
 
-/* line 67, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .strengthIndicator {
   margin: 10px 5px 10px 5px;
   width: 200px;
@@ -141,8 +140,7 @@ label {
   height: 13px;
   border: 1px solid #d3d3d3;
 }
-
-/* line 75, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .strengthIndicator::before {
   content: "";
   display: block;
@@ -165,7 +163,7 @@ label {
   transition-timing-function: linear;
 }
 
-/* line 101, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .passwordWrapper::after {
   content: "";
   display: block;
@@ -173,40 +171,30 @@ label {
   float: none;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .error .strengthIndicator::before {
   width: 10%;
   background-color: #d9534f;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .warning .strengthIndicator::before {
   width: 60%;
   background-color: #f0ad4e;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .success .strengthIndicator::before {
   width: 100%;
   background-color: #5cb85c;
 }
 
-/* line 123, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .feedback.error, .feedback.warning, .feedback.success {
   display: none;
 }
 
-/* line 127, ../sass/main.scss */
-.error .feedback.error {
-  display: block;
-}
-
-/* line 131, ../sass/main.scss */
-.warning .feedback.warning {
-  display: block;
-}
-
-/* line 135, ../sass/main.scss */
-.success .feedback.success {
+/* line 121, ../sass/main.scss */
+.error .feedback.error, .warning .feedback.warning, .success .feedback.success {
   display: block;
 }
