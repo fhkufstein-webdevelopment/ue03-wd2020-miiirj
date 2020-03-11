@@ -10,22 +10,25 @@
 
 
 .btn {
-    /* TODO */
+    @include transition-property(padding);
+    @include transition-duration(300ms);
+    @include transition-delay(0);
+    @include transition-timing-function(linear);
 
     &.ease-in {
-        /* TODO */
+        @include transition-timing-function(ease-in);
     }
 
     &.ease-out {
-        /* TODO */
+        @include transition-timing-function(ease-out);
     }
 
     &.ease-in-out {
-        /* TODO */
+        @include transition-timing-function(ease-in-out);
     }
 
     &.green {
-        /* TODO */
+        @include transition-property(all);
     }
 
     &.animation {
@@ -35,14 +38,24 @@
         right:auto;
         bottom:auto;
         animation-timing-function: linear;
+
     }
 }
 
 body:hover .animation {
-    animation-name:myanimation2;
+    position: absolute;
+    animation-name: myanimation;
     animation-duration:5s;
 }
 
+/* Gibt es einen Weg um die Keyframes "smoother" aussehen zu lassen, also, dass es nicht so jumpy wirkt? */
+@keyframes myanimation {
+    0%   {left: 0; top: 0; right: auto; bottom: auto;}
+    25%  {left: auto; top: 0; right: 0; bottom: auto;}
+    50%  {left: auto; top: auto; right: 0; bottom: 0;}
+    75%  {left: 0; top: auto; right: auto; bottom: 0;}
+    100% {left: 0; top: 0; right: auto; bottom: auto;}
+}
 
 .btn:hover {
     padding-left: 25px;
